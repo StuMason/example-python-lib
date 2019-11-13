@@ -1,0 +1,11 @@
+language: python
+dist: xenial
+python:
+  - "3.6"
+sudo: required
+install:
+  - pip3 install -r requirements.txt -t ${TRAVIS_BUILD_DIR}
+  - pip3 install -r requirements-dev.txt
+  - cp .env.travis .env
+script:
+  - make test

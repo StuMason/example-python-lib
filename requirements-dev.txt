@@ -1,0 +1,4 @@
+moto
+pylint
+pytest
+pytest-cov
